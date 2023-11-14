@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoS</title>
+    <link rel=”icon” type="images/jpeg" href=”img/los.jpg”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- start navbar -->  
+
+    <nav class="w-max tablet:w-full tablet:items-end tablet:pl-[95%] tablet:pr-[5%] mt-6 container navbar-fixed absolute rounded-full mx-auto shadow-2xl tablet:hover:shadow-none tablet:mx-0 tablet:shadow-none bg-sky-200 xl:backdrop-blur tablet:bg-inherit tablet:float-right tablet:h-[30px] tablet:px-2 ">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="relative flex items-center">
+
+
+            <div class="tablet:hidden flex mx-auto items-center justify-center">
+              
+              <div class="sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#about" class="text-sky-900 hover:text-sky-400 rounded-lg px-2 py-1 text-lg font-medium">Start Here</a>
+                  <a href="#" class="text-sky-900 hover:text-sky-400 rounded-lg px-2 py-1 text-lg font-medium">Shop</a>
+                  <a href="#" class="text-sky-900 hover:text-sky-400 rounded-lg px-2 py-1 text-lg font-medium"><img src="img/los.jpg" alt="" class="logo"></a>
+                  <a href="#" class="text-sky-900 hover:text-sky-400 rounded-lg px-2 py-1 text-lg font-medium">Events</a>
+                  <a href="#" class="text-sky-900 hover:text-sky-400 rounded-lg px-2 py-1 text-lg font-medium">About Us</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="xl:hidden flex sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button id="hamburger" name="hamburger" type="button" class="hamburger block absolute right-2 bg-sky-900 w-[2.5rem] h-11 items-center justify-center rounded z-[99999]">
+                <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="xl:hidden navbar-nav transition-all duration-500 bg-white w-[90%]" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 transition duration-500">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="text-fuchsia-800 hover:bg-fuchsia-900 hover:text-white block rounded-md px-3 py-2 text-lg font-bold">HMPSTI</a>
+            <a href="#" class="text-fuchsia-800 hover:bg-fuchsia-900 hover:text-white block rounded-md px-3 py-2 text-lg font-medium">Dashboard</a>
+            <a href="#" class="text-fuchsia-800 hover:bg-fuchsia-900 hover:text-white block rounded-md px-3 py-2 text-lg font-medium">Team</a>
+            <a href="#" class="text-fuchsia-800 hover:bg-fuchsia-900 hover:text-white block rounded-md px-3 py-2 text-lg font-medium">Projects</a>
+            <a href="#" class="text-fuchsia-800 hover:bg-fuchsia-900 hover:text-white block rounded-md px-3 py-2 text-lg font-medium">Calendar</a>
+          </div>
+        </div>
+
+        
+      </nav>
+
+<!-- end navbar -->      
+
+<!-- start carousel -->
+
+      <div class="hero">
+        <div class="info z-[10] absolute w-[60%] left-1/2 translate-x-[-50%] top-52 mobile:-translate-y-14 md:top-40 items-center">
+          <h1 class="text-center text-5xl sm:text-3xl font-semibold judul text-sky-500">"MAJU SERIBU LANGKAH MENJEMPUT SEJUTA MIMPI"</h1>
+          <p class="text-center text-2xl sm:text-lg text-white my-5">LoS adalah singkatan dari Leader of Smansa, yakni ketua dari masing-masing 29 ekstrakurikuler di SMAN 1 Depok dengan ketua MPK dan Ketua OSIS.</p>
+          <div class="w-40 h-10 bg-sky-300 hover:bg-sky-400 text-sky-600 hover:text-sky-200 shadow mx-auto items-center cursor-pointer rounded-3xl text-center relative transition duration-300"><a href="#about" class="absolute w-full h-full top-0 bottom-0 left-0 py-2">START HERE</a></div>
+          
+        </div>
+        
+      
+      </div>
+
+<!-- <div class="img-slider z-10 bg-fuchsia-800 relative max-w-screen-md:w-[600px] max-w-screen-md:h-[375px]">
+  <div class="slide active bg-fuchsia-800">
+    <img src="img/img1.svg" alt="">
+    <div class="info">
+      <h2>Slide 1</h2>
+    </div>
+  </div>
+  <div class="slide bg-fuchsia-800">
+    <img src="img/img2.svg" alt="">
+    <div class="info">
+      <h2>Slide 2</h2>
+    </div>
+  </div>  
+    <div class="slide bg-fuchsia-800">
+      <img src="img/img3.svg" alt="">
+      <div class="info">
+        <h2>Slide 3</h2>
+      </div>
+    </div> 
+      <div class="navigation z-[2] absolute flex left-1/2 translate-x-[-50%] top-[50%] translate-y-[40%]">
+        <div class="btns active"></div>
+        <div class="btns"></div>
+        <div class="btns"></div>
+      </div>
+</div> -->
+
+
+
+<!-- end carousel -->
+
+
+  <!-- start support -->
+<div id="support" class="support py-5 bg-sky-50 px-24 tablet:px-5">
+  <div class="tittle-support">
+    <h3 class="text-center text-slate-500/70 text-xl">━ FEATURED IN ━</h3>
+  </div>
+  <div class="isi gap-1 tablet:flex-wrap flex mt-3">
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/bootstrap.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/css.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/figma.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/html.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/php.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/javascript.png" alt=""></div>
+    <div class="content mx-auto w-[100px] text-black hidden-up"><img src="img/mysql.png" alt=""></div>
+  </div>
+</div>
+<!-- finish supprt -->
+<!-- start about -->
+
+<div id="about" class="about bg-sky-50 w-full left-0 pt-20 relative pb-20">
+  <div class="main-about px-20 tablet:px-5">
+    <div class="tittle-about w-full mx-auto mb-12 hidden-up grid grid-rows-1 items-center">
+      <h1 class="text-center text-5xl sm:text-4xl font-medium text-sky-600">Leader Of SMA Negeri 1 Depok</h3>  
+    </div>
+    <div class=" bg-sky-50 tablet:gap-10 gap-2 content flex w-[95%] tablet:flex-wrap-reverse relative mx-auto ">
+      <div class="flex h-[19rem] w-[64%] tablet:w-[100%] tablet:h-[400px] transition duration-300 ease-in-out relative ">
+        <img src="img/content1.jpeg" alt="" class="xl:bottom-0 h-[19rem] rounded-2xl slide object-cover absolute w-full transition duration-300 ease-in-out active">
+        <img src="img/content2.jpeg" alt="" class="xl:bottom-0 h-[19rem] rounded-2xl slide object-cover absolute w-full transition duration-300 ease-in-out">
+        <img src="img/content3.jpeg" alt="" class="xl:bottom-0 h-[19rem] rounded-2xl slide object-cover absolute w-full transition duration-300 ease-in-out">
+        <div class="flex titik pl-4 bottom-2 absolute tablet:hidden">
+          <div class="btns active transition duration-300 ease-in-out"></div> 
+          <div class="btns transition duration-300 ease-in-out"></div>
+          <div class="btns transition duration-300 ease-in-out"></div>
+        </div>
+      </div>
+    
+      <div class=" tablet:ml-0 p-5 hidden-left relative tablet:h-full h-[300px] w-[35%] tablet:w-[100%] bg-sky-950 rounded-2xl pl-8 hover:shadow-2xl hover:scale-105 transition-transform">
+        <h1 class="text-sky-200 font-medium text-2xl tablet:xl">LEADER OF SMANSA</h1>
+        <P class="text-white mt-3 mb-2 xl:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis quia veritatis ipsam debitis deserunt iste sequi accusamus labore provident. Numquam cupiditate recusandae odit iure nesciunt labore aperiam nobis? Eligendi harum assumenda excepturi debitis nemo consequuntur sed, corporis quia ea!</P>
+        <div class="absolute tablet:relative xl:bottom-4 bottom-0 w-40 h-10 bg-sky-300 hover:bg-sky-400 text-sky-600 hover:text-sky-200 shadow items-center cursor-pointer rounded-3xl text-center transition duration-300"><a href="#about" class="absolute w-full h-full top-0 bottom-0 left-0 py-2">START HERE</a></div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<!-- end about -->
+
+<!-- start content -->
+  <div class="content bg-sky-950 w-full px-24 py-24 tablet:px-5">
+    <div class="main-content flex tablet:flex-wrap">
+      <div class="left-content w-[40%] hidden-up grid grid-rows-1 items-center justify-center tablet:w-full">
+        <div class="kiri h-max self-center ">
+          <h1 class="text-center text-sky-200 text-5xl text-shadow">CARI TAU LEBIH TENTANG KAMI</h1>
+          <p class="text-white text-xl text-center my-5 sm:text-base">━ Leader of SMA NEGERI 1 Depok ━</p>
+          <button class="self-center block w-40 h-10 bg-sky-300 hover:bg-sky-400 text-sky-600 hover:text-sky-200 shadow mx-auto items-center cursor-pointer rounded-3xl text-center relative transition duration-300"><a href="#" class="absolute w-full h-full top-0 bottom-0 left-0 py-2">Tentang Kami</a></button>
+        </div>
+      </div>
+      <div class="right-content w-[60%] h-[30rem] sm:h-[10rem] hidden-left tablet:w-full">
+        <div class="kanan flex w-full h-full place-content-end gap-3">
+          <div class="right-isi-kiri goyang-atas w-[40%] relative">
+            <img src="img/los.jpg" alt="" class="absolute w-full tablet:w-full top-5 right-0 drop-shadow-white rounded">
+          </div>
+          <div class="right-isi-tengah goyang-atas w-[40%] relative">
+            <img src="img/osis.jpg" alt="" class="absolute w-full tablet:w-full bottom-12 right-0 tablet:top-5 tablet:bottom-0 drop-shadow-white rounded">
+          </div>
+          <div class="right-isi-kanan goyang-atas w-[40%] relative">
+            <img src="img/mpk.jpg" alt="" class="absolute w-full tablet:w-full top-3 right-0 drop-shadow-white rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- finish content -->
+
+<!-- start anggota -->
+  <div class="keanggotaan bg-sky-50 w-full px-24 py-24 tablet:px-5">
+    <div class="tittle-about w-1/2 mx-auto mb-12 hidden-up sm:w-full">
+      <h1 class="text-center text-5xl font-medium text-sky-600">Keanggotaan</h3>  
+    </div>
+    <div class="main-keanggotaan grid grid-cols-3 hidden-up">
+        <div class="proker grid grid-rows-2 ">
+          <img src="img/proker.png" alt="" class="w-[40%] sm:w-[70%] drop-shadow mx-auto">
+          <div class="isi-left w-full h-max">
+            <h1 class="judul-anggota text-sky-300 text-center">Program Kerja</h1>
+            <p class="p-anggota text-center">20+</p>
+          </div>
+        </div>
+        <div class="ekskul grid grid-rows-2">
+          <img src="img/ekskul.png" alt="" class="w-[40%] sm:w-[70%] drop-shadow mx-auto">
+          <div class="isi-left w-full h-max">
+            <h1 class="judul-anggota text-sky-300 h-max text-center">Ekstrakurikuler</h1>
+            <p class="p-anggota h-max text-center">20+</p>
+          </div>
+        </div>
+        <div class="sdm grid grid-rows-2">
+          <img src="img/sdm.png" alt="" class="w-[40%] sm:w-[70%] drop-shadow mx-auto">
+          <div class="isi-left w-full h-max">
+            <h1 class="judul-anggota text-sky-300 text-center">SDM</h1>
+            <p class="p-anggota text-center">20+</p>
+          </div>
+        </div>
+    </div>
+
+    
+  </div> 
+<!-- finish anggota -->
+
+<div class="keanggotaan bg-sky-950 w-full px-24 py-24 tablet:px-5">
+  <div class="tittle-about w-full grid grid-rows-2 place-content-center mb-12 hidden-up">
+    <h1 class="text-center text-5xl self-center font-medium text-sky-200">Ekstrakurikuler</h3>  
+    <p class="text-white text-xl self-center sm:text-base text-center my-5 sm:my-2">━ Terdapat 29 Ekstrakurikuler ━</p>
+  </div>
+
+  <div class="grid grid-cols-2 gap-2 laptop:grid-cols-4 justify-center">
+    <h2 class="h-[90%] sm:h-full text-xl font-semibold text-white laptop:col-start-4 laptop:row-start-2 laptop:flex hidden-up"><span class="self-center">Welcome to <br>Leader of Smansa</span></h2>
+    <div class="h-[90%] sm:h-full text-lg font-bold text-white laptop:col-start-2 laptop:row-start-2 laptop:flex hidden-up"><span class="self-end">@alfahreziii_</span></div>
+
+    <div class="h-[90%] sm:h-full aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/IT.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full laptop:col-start-3 aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/cirrus.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/focus.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/rohis.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/rokris.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full laptop:col-start-2 aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/sc.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full laptop:col-start-4 aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/sm.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/nbk.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+    <div class="h-[90%] sm:h-full laptop:col-start-3 aspect-[1/1] rounded-lg hidden-up overflow-hidden group relative hover:scale-95 transition-all duration-500"><div class="w-full h-full bg-[url('../public/img/smarsq.jpg')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div></div>
+  </div>
+
+  <button class="sm:text-xl sm:w-60 sm:h-10 mt-10 text-3xl self-center block w-96 h-20 bg-sky-300 hover:bg-sky-400 text-sky-600 hover:text-sky-200 shadow mx-auto items-center cursor-pointer rounded-3xl text-center relative transition duration-300"><a href="#" class="absolute w-full h-full top-0 bottom-0 left-0 sm:py-1 py-5">━ Pelajari Lebih Lanjut ━</a></button>
+
+</div> 
+
+<footer class="bg-sky-50 w-full px-20 pt-16 sm:px-5">
+  <div class="flex sm:flex-wrap gap-3 mb-10">
+    <div class="left-fotter w-[60%] sm:w-full flex place-content-center sm:mb-5 sm:flex-wrap">
+      <div class="w-[30%] sm:w-full self-center"><img src="img/los.jpg" alt="" class="w-full sm:w-[70%] sm:mx-auto"></div>
+      <div class="w-[70%] sm:w-full self-center"><h1 class="text-sky-950/80 text-xl">Maju Seribu Langkah. Menjemput Sejuta Mimpi. Because we are family</h1></div>
+    </div>
+    <div class="mid-fotter w-[20%] sm:w-1/2 mx-3 sm:mx-0">
+      <div class="tittle-fotter">
+        <h1 class="text-sky-400 font-bold text-2xl">Kontak</h1>
+      </div>
+      <div class="isi-mid-fot mt-3">
+        <p class="text-sky-950"><span class="font-light text-sky-950/80">Alamat</span><br><span class="font-semibold text-sky-950">SMA Negeri 1 Kota Depok</span><br>
+          <span class="font-medium">Jl. Nusantara Raya No.317, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16432</span></p>
+      </div>
+    </div>
+    <div class="right-fotter w-[20%] sm:w-1/2">
+      <div class="tittle-fotter">
+        <div class="tittle-fotter">
+          <h1 class="text-sky-400 font-bold text-2xl">Halaman</h1>
+        </div>
+        <div class="isi-mid-fot mt-3">
+          <h1 class="font-medium text-sky-950 hover:text-sky-500 text-lg"><a href="#about">Start Here</a></h1>
+          <h1 class="font-medium text-sky-950 hover:text-sky-500 text-lg"><a href="#">Shop</a></h1>
+          <h1 class="font-medium text-sky-950 hover:text-sky-500 text-lg"><a href="#">Events</a></h1>
+          <h1 class="font-medium text-sky-950 hover:text-sky-500 text-lg"><a href="#">About Us</a></h1>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="w-full h-[1px] bg-slate-600 "></div>
+  <div class="w-full flex place-content-between py-8">
+    <div class="left-last">
+      <h1 class="text-sky-950/80 text-sm">Copyright © IT CLUB 1 DEPOK 2023. Develop by <a href="https://www.instagram.com/alfahreziii_/" class="hover:text-sky-500">Al Fahrezi</a></h1>
+    </div>
+    <div class="right-last flex gap-3">
+      <div class="medsos fill-sky-950/50"><a href="https://www.instagram.com/alfahreziii_/"><img src="img/instagram.svg" alt=""></a></div>
+      <div class="medsos fill-sky-950/50"><a href="#"><img src="img/mail.svg" alt=""></a></div>
+      <div class="medsos fill-sky-950/50"><a href="#"><img src="img/facebook.svg" alt=""></a></div>
+    </div>
+  </div>
+</footer>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
