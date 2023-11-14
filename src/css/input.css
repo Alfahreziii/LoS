@@ -98,7 +98,6 @@ html {
     background-size: cover;
     background-image: url('./public/img/hero.jpeg');
     background-position: center;
-    position: relative;
     height: 600px;
 }
 .hero::after{
