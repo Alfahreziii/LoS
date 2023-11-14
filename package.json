@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/style.css",
-    "build": "cross-env NODE_ENV=production postcss ./src/css/input.css -o ./public/style.css"
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./src/css/input.css -o ./public/style.css"
   },
   "keywords": [],
   "author": "",

@@ -1157,6 +1157,11 @@ video {
   color: rgb(186 230 253 / var(--tw-text-opacity));
 }
 
+.text-sky-300 {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252 / var(--tw-text-opacity));
+}
+
 .text-sky-400 {
   --tw-text-opacity: 1;
   color: rgb(56 189 248 / var(--tw-text-opacity));
@@ -1193,11 +1198,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-sky-300 {
-  --tw-text-opacity: 1;
-  color: rgb(125 211 252 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -1539,25 +1539,9 @@ html {
 }
 
 @media (max-width: 400px) {
-  .mobile\:w-full {
-    width: 100%;
-  }
-
-  .mobile\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .mobile\:-translate-y-14 {
     --tw-translate-y: -3.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .mobile\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .mobile\:self-center {
-    align-self: center;
   }
 }
 
@@ -1570,11 +1554,6 @@ html {
     inset: auto;
   }
 
-  .sm\:my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1585,12 +1564,17 @@ html {
     margin-right: auto;
   }
 
-  .sm\:ml-6 {
-    margin-left: 1.5rem;
+  .sm\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .sm\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .sm\:block {
@@ -1609,6 +1593,10 @@ html {
     height: 100%;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-60 {
     width: 15rem;
   }
@@ -1621,16 +1609,13 @@ html {
     width: 100%;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:flex-wrap {
     flex-wrap: wrap;
   }
 
-  .sm\:self-center {
-    align-self: center;
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .sm\:px-6 {
@@ -1641,11 +1626,6 @@ html {
   .sm\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
-  }
-
-  .sm\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .sm\:pr-0 {
