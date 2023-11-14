@@ -96,8 +96,9 @@ html {
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./public/img/hero.jpeg');
+    background-image: url('img/hero.jpeg');
     background-position: center;
+    position: relative;
     height: 600px;
 }
 .hero::after{
